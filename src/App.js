@@ -81,9 +81,10 @@ function App() {
     <>
       <GlobalStyle />
       <header>
-        <h1>Precisa de ajuda Financeira?😔</h1>
+        <h1>Precisa de ajuda Financeira?😔</h1>{" "}
+        {/* eslint-disable jsx-a11y/accessible-emoji */}
         <h2>Sem problemas! A Serasa esta aqui para lhe auxiliar 💪😎</h2>
-
+        {/* eslint-disable jsx-a11y/accessible-emoji */}
         <h1>DADOS DE 2019</h1>
         <p>
           A cada dia, cresce o numero de inadimplentes no Brasil. Sabemos que
@@ -94,14 +95,11 @@ function App() {
           Cada um dos inadimplentes deixou de honrar, em média 3,5 contas em
           2019.
         </p>
-
         <h2>
           Por isso, a Serasa criou para voce uma plataforma para organizar as
           suas finanças.
         </h2>
-
         <h1>QUER AJUDA? CLIQUE NO BOTÃO ABAIXO:</h1>
-
         <button
           className="btn"
           id="quero_ajuda"
@@ -225,6 +223,7 @@ function App() {
       )}
 
       <footer>Com ❤️ SERASA!</footer>
+      {/* eslint-disable jsx-a11y/accessible-emoji */}
     </>
   );
 }
