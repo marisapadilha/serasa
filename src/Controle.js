@@ -36,6 +36,7 @@ const Controle = ({ onSubmit, receitas, despesas }) => {
       receitas.map((item) => {
         let converted = parseFloat(item.amount);
         total += converted;
+        return item;
       });
 
       setTotalReceitas(total);
@@ -49,6 +50,7 @@ const Controle = ({ onSubmit, receitas, despesas }) => {
       despesas.map((item) => {
         let converted = parseFloat(item.amount);
         total += converted;
+        return item;
       });
 
       setTotalDespesas(total);
