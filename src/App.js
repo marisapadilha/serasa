@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import cep from "cep-promise";
+import React, { useState } from 'react';
+import cep from 'cep-promise';
 
-import Controle from "./Controle";
+import Controle from './Controle';
 
-import GlobalStyle from "./global";
+import GlobalStyle from './global';
 
 function App() {
   const [person, setPerson] = useState({
@@ -14,16 +14,16 @@ function App() {
   const [showForm2, setShowForm2] = useState(false);
 
   //formulario1
-  const [name, setName] = useState("");
-  const [dateOfBirth, setDateOfBirth] = useState("");
-  const [document, setDocument] = useState("");
-  const [cepInput, setCEP] = useState("");
-  const [street, setStreet] = useState("");
-  const [number, setNumber] = useState("");
-  const [district, setDistrict] = useState("");
-  const [city, setCity] = useState("");
-  const [state, setState] = useState("");
-  const [country, setCountry] = useState("");
+  const [name, setName] = useState('');
+  const [dateOfBirth, setDateOfBirth] = useState('');
+  const [document, setDocument] = useState('');
+  const [cepInput, setCEP] = useState('');
+  const [street, setStreet] = useState('');
+  const [number, setNumber] = useState('');
+  const [district, setDistrict] = useState('');
+  const [city, setCity] = useState('');
+  const [state, setState] = useState('');
+  const [country, setCountry] = useState('');
 
   function submitForm1(e) {
     e.preventDefault();
@@ -46,7 +46,7 @@ function App() {
 
   function handleSubmitForm2(form) {
     switch (form.type) {
-      case "DESPESA":
+      case 'DESPESA':
         const { despesas } = person;
 
         setPerson({
@@ -68,11 +68,11 @@ function App() {
   const getCep = (value) => {
     cep(value)
       .then(function (response) {
-        setStreet(response.street ?? "");
-        setDistrict(response.neighborhood ?? "");
-        setCity(response.city ?? "");
-        setState(response.state ?? "");
-        setCountry("BR");
+        setStreet(response.street ?? '');
+        setDistrict(response.neighborhood ?? '');
+        setCity(response.city ?? '');
+        setState(response.state ?? '');
+        setCountry('BR');
       })
       .catch(() => setCEP(value));
   };
@@ -115,7 +115,7 @@ function App() {
           id="quero_ajuda"
           type="button"
           onClick={() => {
-            console.log("gasa");
+            console.log('gasa');
             setShowForm1(true);
           }}
         >
@@ -125,7 +125,7 @@ function App() {
 
       {showForm1 && (
         <form action="/" id="form1" onSubmit={submitForm1}>
-          <div class="d-flex">
+          <div className="d-flex">
             <input
               className="input"
               type="text"
@@ -152,7 +152,7 @@ function App() {
             />
           </div>
 
-          <div class="d-flex">
+          <div className="d-flex">
             <input
               className="input"
               type="text"
@@ -180,7 +180,7 @@ function App() {
             />
           </div>
 
-          <div class="d-flex">
+          <div className="d-flex">
             <input
               className="input"
               type="text"

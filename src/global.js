@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
@@ -92,67 +92,6 @@ export default createGlobalStyle`
 
     .form-inline button {
     height: 42px;
-    }
-
-    .container-list {
-    max-width: 600px;
-    margin: 0 auto;
-    grid-gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    }
-
-    .container-list div {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    background: #fd83c7;
-    border-radius: 5px;
-    padding: 10px;
-    align-items: center;
-    }
-
-    .container-list div strong {
-    color: crimson;
-    font-size: 16px;
-    }
-
-    .container-list div ul {
-    padding: 0;
-    list-style: none;
-    width: 80%;
-    }
-
-    .container-list div ul li {
-    text-align: center;
-    padding: 5px;
-    }
-
-    .result {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    background: #fd83c7;
-    border-radius: 5px;
-    padding: 10px;
-    max-width: 580px;
-    }
-
-    .links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 20px auto;
-    background: #fd83c7;
-    border-radius: 5px;
-    padding: 10px;
-    max-width: 580px;
-    }
-
-    .links a {
-    font-size: 16px;
-    color: darkviolet;
     }
 
     .green {
