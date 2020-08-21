@@ -1,8 +1,8 @@
 import React from "react";
 
-import { ContainerList, ListItem } from "./styles-list";
+import { ContainerList, ListItem } from "./styles";
 
-import { formatCurrency } from "./utils";
+import { formatCurrency } from "../utils";
 
 const List = ({ list }) => {
   return (

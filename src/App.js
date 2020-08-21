@@ -81,9 +81,19 @@ function App() {
     <>
       <GlobalStyle />
       <header>
-        <h1>Precisa de ajuda Financeira?😔</h1>{" "}
-        {/* eslint-disable jsx-a11y/accessible-emoji */}
-        <h2>Sem problemas! A Serasa esta aqui para lhe auxiliar 💪😎</h2>
+        <h1>
+          Precisa de ajuda Financeira?
+          <span role="img" aria-label="emoji">
+            😔
+          </span>
+        </h1>
+
+        <h2>
+          Sem problemas! A Serasa esta aqui para lhe auxiliar
+          <span role="img" aria-label="emoji">
+            💪😎
+          </span>
+        </h2>
         {/* eslint-disable jsx-a11y/accessible-emoji */}
         <h1>DADOS DE 2019</h1>
         <p>
@@ -222,7 +232,9 @@ function App() {
         />
       )}
 
-      <footer>Com ❤️ SERASA!</footer>
+      <footer>
+        Com <span role="img">❤️</span> SERASA!
+      </footer>
       {/* eslint-disable jsx-a11y/accessible-emoji */}
     </>
   );

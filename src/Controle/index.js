@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 import { Container, Form, Despesa, Receitas, Saldo, Links } from "./styles";
-import List from "./List";
 
-import { formatCurrency } from "./utils";
+import List from "../List";
+
+import { formatCurrency } from "../utils";
 
 const Controle = ({ onSubmit, receitas, despesas }) => {
   const [totalReceitas, setTotalReceitas] = useState(0);
@@ -130,9 +131,11 @@ const Controle = ({ onSubmit, receitas, despesas }) => {
             Parabéns, você tem saldo positivo aproveite e aprenda a investir seu
             dinheiro segue abaixo alguns links para lhe ajudar
           </p>
-          <a href="">Serasa</a>
-          <a href="">Me Poupe</a>
-          <a href="">Primo Rico</a>
+          <a href="https://www.serasa.com.br/">Serasa</a>
+          <a href="https://mepoupenaweb.uol.com.br/">Me Poupe</a>
+          <a href="https://www.youtube.com/channel/UCT4nDeU5pv1XIGySbSK-GgA">
+            Primo Rico
+          </a>
           <a href="https://www.youtube.com/watch?v=dhMpPphp2RU">Serasa 1</a>
           <a href="https://www.youtube.com/watch?v=DkILvNSM4ZY">Serasa 2</a>
         </Links>
