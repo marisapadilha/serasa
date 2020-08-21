@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import cep from "cep-promise";
 
 import Controle from "./Controle";
@@ -24,19 +24,6 @@ function App() {
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
   const [country, setCountry] = useState("");
-
-  function resetForm1() {
-    setName("");
-    setDateOfBirth("");
-    setDocument();
-    setCEP("");
-    setStreet("");
-    setNumber("");
-    setDistrict("");
-    setCity("");
-    setState("");
-    setCountry("");
-  }
 
   function submitForm1(e) {
     e.preventDefault();
