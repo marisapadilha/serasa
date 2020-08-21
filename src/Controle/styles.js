@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 10px;
@@ -6,7 +6,7 @@ export const Container = styled.div`
   max-width: 650px;
   margin: 15px auto;
   display: grid;
-  grid-template-areas: "form form " "despesas receitas" "saldo saldo" "links links";
+  grid-template-areas: 'form form' 'despesas receitas' 'saldo saldo' 'links links';
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 `;
