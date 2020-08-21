@@ -6,22 +6,26 @@ export default createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
+        outline: 0;
         box-sizing: border-box;
     }
 
     html,
-    body {
-        margin: 0;
+    body,
+    #root {
         height: 100%;
     }
 
     body {
-        display: flex;
-        flex-direction: column;
         background: #ff9ad2;
-        font-family: 'Source Sans Pro', sans-serif;
         text-rendering: optimizeLegibility !important;
         -webkit-font-smoothing: antialiased !important;
+    }
+    
+    body,
+    input,
+    button {
+        font-family: 'Source Sans Pro', sans-serif;
     }
 
     footer {

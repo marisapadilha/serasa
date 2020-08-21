@@ -115,7 +115,6 @@ function App() {
           id="quero_ajuda"
           type="button"
           onClick={() => {
-            console.log('gasa');
             setShowForm1(true);
           }}
         >

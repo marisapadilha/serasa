@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import { Container, Form, Despesa, Receitas, Saldo, Links } from "./styles";
+import { Container, Form, Despesa, Receitas, Saldo, Links } from './styles';
 
-import List from "../List";
+import List from '../List';
 
-import { formatCurrency } from "../utils";
+import { formatCurrency } from '../utils';
 
 const Controle = ({ onSubmit, receitas, despesas }) => {
   const [totalReceitas, setTotalReceitas] = useState(0);
   const [totalDespesas, setTotalDespesas] = useState(0);
   const [saldo, setSaldo] = useState(0);
 
-  const [type, setType] = useState("");
-  const [description, setDescription] = useState("");
-  const [amount, setAmount] = useState("");
+  const [type, setType] = useState('');
+  const [description, setDescription] = useState('');
+  const [amount, setAmount] = useState('');
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -23,9 +23,9 @@ const Controle = ({ onSubmit, receitas, despesas }) => {
       description,
       amount,
     };
-    setType("");
-    setDescription("");
-    setAmount("");
+    setType('');
+    setDescription('');
+    setAmount('');
 
     onSubmit(data);
   }
@@ -71,13 +71,13 @@ const Controle = ({ onSubmit, receitas, despesas }) => {
           className="input"
           onChange={(e) => setType(e.target.value)}
         >
-          <option value="" selected={type === "" ? "selected" : ""}>
+          <option value="" selected={type === ''}>
             SELECIONE
           </option>
-          <option selected={type === "" ? "DESPESA" : ""} value="DESPESA">
+          <option selected={type === 'DESPESA'} value="DESPESA">
             Despesa
           </option>
-          <option selected={type === "" ? "RECEITA" : ""} value="RECEITA">
+          <option selected={type === 'RECEITA'} value="RECEITA">
             Receita
           </option>
         </select>
@@ -119,8 +119,8 @@ const Controle = ({ onSubmit, receitas, despesas }) => {
       </Despesa>
 
       <Saldo>
-        <strong className={saldo > 0 ? "green" : "red"}>Saldo</strong>
-        <span className={saldo > 0 ? "green" : "red"}>
+        <strong className={saldo > 0 ? 'green' : 'red'}>Saldo</strong>
+        <span className={saldo > 0 ? 'green' : 'red'}>
           {formatCurrency(saldo)}
         </span>
       </Saldo>
